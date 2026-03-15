@@ -1,10 +1,42 @@
+# npm-test — React Package Testing Playground
 
-### `npx create-react-app npm-test`
-### `cd npm-test`
-### `yarn start`
-### `Remove all files inside /src less App.js and index.js`
-### `npm install --save-dev @babel/core @babel/cli @babel/preset-env`
-### `npm install -save @babel/polyfill`
-### `create babel.config.json`
-### `replace build command un package.json for "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files"`
-### `npm run build`
+A Create React App (CRA) sandbox for experimenting with and testing npm packages.
+
+[![CI](https://github.com/xabierlameiro/npm-test/actions/workflows/ci.yml/badge.svg)](https://github.com/xabierlameiro/npm-test/actions/workflows/ci.yml)
+
+## Purpose
+
+This is a personal throwaway project for quickly evaluating npm packages, testing React patterns, and experimenting with new libraries without polluting other projects.
+
+## Stack
+
+| Layer           | Choice              |
+| --------------- | ------------------- |
+| Framework       | Create React App    |
+| Language        | TypeScript          |
+| Testing         | Jest                |
+| Package manager | npm                 |
+
+## Getting started
+
+```bash
+git clone https://github.com/xabierlameiro/npm-test.git
+cd npm-test
+npm install
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+## Scripts
+
+| Script                       | Description                 |
+| ---------------------------- | --------------------------- |
+| `npm start`                  | Start development server    |
+| `npm run build`              | Production build            |
+| `npm test`                   | Jest tests (watch mode)     |
+| `npm test -- --watchAll=false` | Jest tests (CI mode)      |
+
+## License
+
+[MIT](./LICENSE) — © 2026 Xabier Lameiro
